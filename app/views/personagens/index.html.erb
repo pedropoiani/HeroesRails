@@ -1,0 +1,60 @@
+
+<h5>Herois Cadastrados </h5>
+<div class="card-body">
+
+<%= form_tag("/personagens", method: "get") do %>
+<div class="row">
+      <div class="col-md-3">
+<%= select_tag(:campo, options_for_select([['Nome', 'nome'],
+                                           ['Forca', 'forca'],
+                                           ['Resistencia', 'resistencia'],
+                                           ['Agilidade', 'agilidade'],
+                                           ['Destreza', 'destreza'],
+                                           ], params[:campo]),
+                                          class: 'custom-select') %>
+      </div>
+
+
+<%= text_field_tag(:valor, params[:valor])%>
+<%= submit_tag("Filtrar", class: 'btn btn-info', :style => "margin-left: 10px" ) %>
+<div class="col-md-4">
+
+      <%= link_to 'Criar Personagem', new_personagem_path, class: 'btn btn-warning' %>
+
+   </div>
+</div>
+
+<% end %>
+<table class="table table-hover" style="text-align:center; margin-top: 10px">
+      <thead class="thead-dark">
+   <tr > 
+     <th>#</th>
+     <th>Nome</th>
+     <th>Força</th>
+     <th>Resistencia</th>
+     <th>Agilidade</th>
+     <th>Destreza</th>
+     <th>Ações</th>
+   </tr>
+</thead>
+   <% @personagens.each do |personagem|  %>
+   <tr>
+      <td> <%= personagem.id %> </td>
+      <td> <%= personagem.nome %> </td>
+      <td> <%= personagem.forca %> </td>
+      <td> <%= personagem.resistencia %> </td>
+      <td> <%= personagem.agilidade %> </td>
+      <td> <%= personagem.destreza %> </td>
+      <td >
+         <%= link_to 'Ver', personagem_path(personagem), class: 'btn btn-success'%>
+         <%= link_to 'Editar' , edit_personagem_path(personagem), class:"btn btn-warning"%>
+         <%= link_to "Remover", personagem, method: :delete, class: "btn btn-danger", data: { confirm: "Deseja remover permanentemente \"#{personagem.nome}\"?"} %>
+         
+      </td>
+   <tr>
+   <% end %>
+
+</table>
+
+
+

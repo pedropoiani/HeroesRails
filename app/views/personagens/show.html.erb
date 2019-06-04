@@ -1,0 +1,42 @@
+
+<!-- Image and text -->
+<p id="notice"><%= notice %> </p>
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h5>Informações do Heroi</h5>
+    <ul class="list-group" style="margin-top: 25px"> 
+      <li class="list-group-item"><b>Nome:</b> <%= @personagem.nome %></li>
+      <li class="list-group-item"><b>Força:</b> <%= @personagem.forca %> </li>
+      <li class="list-group-item"><b>Resistencia:</b> <%= @personagem.resistencia %> </li>
+      <li class="list-group-item"><b>Agilidade:</b> <%= @personagem.agilidade %> </li>
+      <li class="list-group-item"><b>Destreza:</b> <%= @personagem.destreza %> </li>
+   </ul>
+        </div>
+        <div class="col-sm">
+            <h5>Poderes</h5>
+     <ul class="list-group" style="margin-top: 25px">
+      <% @personagem.poderes.each do |poder| %>    
+        <li class="list-group-item"><b>Nome do Poder:</b> <%= poder.nome %></li>
+        <li class="list-group-item"><b>Tipo do Poder:</b> <%= poder.tipo %></li>
+       <% end %>
+      </ul>
+       </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">  
+<%= link_to 'Editar Personagem' , edit_personagem_path(@personagem), class:"btn btn-info"%>
+</div>
+</div>
+</div>
+
+
+

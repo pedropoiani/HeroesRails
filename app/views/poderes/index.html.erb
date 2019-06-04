@@ -1,0 +1,38 @@
+
+<h5>Poderes Cadastrados </h5>
+<div class="card-body">
+
+<%= form_tag("/poderes", method: "get") do %>
+<div class="row">
+      <div class="col-md-3">
+<%= select_tag(:campo2, options_for_select([['Tipo', 'tipo'],
+                                           ['Nome', 'nome'],
+                                           ], params[:campo2]),
+                                          class: 'custom-select') %>
+      </div>
+
+
+<%= text_field_tag(:valor1, params[:valor1])%>
+<%= submit_tag("Filtrar", class: 'btn btn-info', :style => "margin-left: 10px" ) %>
+</div>
+
+<% end %>
+<table class="table table-hover" style="text-align:center; margin-top: 10px">
+      <thead class="thead-dark">
+   <tr > 
+     <th>#</th>
+     <th>Tipo</th>
+     <th>Nome</th>
+   </tr>
+</thead>
+  <% @poderes.each do |poder| %>
+   <tr>
+      <td> <%= poder.personagem.id %></td>
+      <td> <%= poder.tipo %> </td>
+      <td> <%= poder.nome %> </td>
+   <tr>
+   <% end %>
+
+</table>
+
+

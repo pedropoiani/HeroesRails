@@ -1,0 +1,23 @@
+<h5> Novo Personagem </h5>
+
+<%= @personagem.errors.first %>
+
+<%= form_for @personagem do |f| %>
+<b> Nome:</b><br>
+<%= f.text_field :nome %>
+<p></p>
+<b> Força:</b><br>
+<%= f.number_field :forca %>
+<p></p>
+<b> Resistencia: </b><br>
+<%= f.number_field :resistencia %>
+<p></p>
+<b> Agilidade:</b><br>
+<%= f.number_field :agilidade %>
+<p></p>
+<b> Destreza:</b><br>
+<%= f.number_field :destreza %>
+<p></p>
+<%= f.submit("Salvar", :class => "btn btn-dark")  %>
+
+<% end %>

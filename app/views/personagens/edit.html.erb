@@ -1,0 +1,23 @@
+<h4>Editar perfil</h4>
+
+<%= form_for @personagem do |f| %>
+  <b>Nome:</b><br/>
+  <%= f.text_field :nome %>
+</p><p>
+  <b>Força:</b><br/>
+  <%= f.text_field :forca %>
+</p><p>
+  <b>Resistencia:</b><br/>
+  <%= f.text_field :resistencia %>
+</p><p>
+  <b>Agilidade:</b><br/>
+  <%= f.text_field :agilidade %>
+</p><p>
+   <b>Destreza:</b><br/>
+   <%= f.text_field :destreza %>
+</p><p>
+
+<%= f.submit("Salvar", :class => "btn btn-dark")  %>
+
+</p>
+<% end %>
