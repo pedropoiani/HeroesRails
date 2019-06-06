@@ -1,17 +1,16 @@
+<div class="col-md-3">
 <h5> Novo Poder </h5>
-
 <%= @poder.errors.first %>
-
 <%= form_for @poder do |f| %>
 <b> Personagem:</b><br>
-<%= f.collection_select(:personagem_id, Personagem.all, :id, :nome) %>
+<%= f.collection_select(:personagem_id, Personagem.all, :id, :nome, {},  {:class => 'custom-select'}) %>
 <p></p>
 <b> Nome:</b><br>
 <%= f.text_field :nome %>
 <p></p>
-<b> Força:</b><br>
-<%= f.number_field :tipo %>
+<b> Tipo:</b><br>
+<%= f.text_field :tipo %>
 <p></p>
 <%= f.submit("Salvar", :class => "btn btn-dark")  %>
-
+</div>
 <% end %>

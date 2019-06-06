@@ -31,7 +31,7 @@ class PoderesController < ApplicationController
 
         @poder = Poder.new(params.require(:poder).permit(:nome, :tipo, :personagem_id))
         if @poder.save
-          redirect_to @poder, :notice => 'Cadastro criado com sucesso!'
+          redirect_to @poder.personagem, :notice => 'Cadastro criado com sucesso!'
           else
             render :new
           end
@@ -54,7 +54,7 @@ class PoderesController < ApplicationController
     
             id = params[:id]
             Poder.destroy id
-            redirect_to :root
+            redirect_to :poderes
           end
           
     
