@@ -26,4 +26,36 @@ class PoderesController < ApplicationController
     
       
       end
+
+      def create
+
+        @poder = Poder.new(params.require(:poder).permit(:nome, :tipo, :personagem_id))
+        if @poder.save
+          redirect_to @poder, :notice => 'Cadastro criado com sucesso!'
+          else
+            render :new
+          end
+          end
+
+      def update
+
+        @poder = Poder.find(params[:id])
+          
+           if @poder.update_attributes(params.require(:poder).permit(:nome, :tipo))
+            redirect_to @poder.personagem, :notice => 'Cadastro Atualizado com Sucesso!'
+          
+            else
+              render :update
+            end
+    
+          end
+
+          def destroy
+    
+            id = params[:id]
+            Poder.destroy id
+            redirect_to :root
+          end
+          
+    
     end

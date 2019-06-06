@@ -14,23 +14,42 @@
 
 <%= text_field_tag(:valor1, params[:valor1])%>
 <%= submit_tag("Filtrar", class: 'btn btn-info', :style => "margin-left: 10px" ) %>
+<div class="col-md-4">
+
+      <%= link_to 'Criar Poder', new_poder_path, class: 'btn btn-warning' %>
+
+   </div>
+</div>
+
 </div>
 
 <% end %>
 <table class="table table-hover" style="text-align:center; margin-top: 10px">
       <thead class="thead-dark">
    <tr > 
-     <th>#</th>
+     <th>ID</th>
+     <th>Nome Person</th>
      <th>Tipo</th>
      <th>Nome</th>
+     <th>Ações</th>
+     
    </tr>
 </thead>
   <% @poderes.each do |poder| %>
    <tr>
-      <td> <%= poder.personagem.id %></td>
-      <td> <%= poder.tipo %> </td>
+      <td> <%= poder.id %></td>
+      <td> <%= poder.personagem.nome %></td>
       <td> <%= poder.nome %> </td>
-   <tr>
+      <td> <%= poder.tipo %> </td>  
+      <td>
+      
+      <%= link_to 'Ver', poder.personagem, class: 'btn btn-success'%>
+      <%= link_to 'Editar' , edit_poder_path(poder), class:"btn btn-warning"%>
+      <%= link_to "Remover", poder, method: :delete, class: "btn btn-danger", data: { confirm: "Deseja remover permanentemente \"#{poder.nome}\"?"} %>
+
+
+      </td>
+      <tr>
    <% end %>
 
 </table>

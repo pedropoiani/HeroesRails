@@ -56,7 +56,7 @@
     
     id = params[:id]
     Personagem.destroy id
-    redirect_to :root
+    redirect_to :personagens_path
   end
   
 end
