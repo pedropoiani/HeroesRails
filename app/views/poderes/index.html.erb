@@ -5,8 +5,8 @@
 <%= form_tag("/poderes", method: "get") do %>
 <div class="row">
       <div class="col-md-3">
-<%= select_tag(:campo2, options_for_select([['Tipo', 'tipo'],
-                                           ['Nome', 'nome'],
+<%= select_tag(:campo2, options_for_select([['Tipo de Poder', 'tipo'],
+                                           ['Nome do Poder', 'nome'],
                                            ], params[:campo2]),
                                           class: 'custom-select') %>
       </div>
@@ -28,9 +28,9 @@
       <thead class="thead-dark">
    <tr > 
      <th>ID</th>
-     <th>Nome Person</th>
-     <th>Tipo</th>
      <th>Nome</th>
+     <th>Tipo</th>
+     <th>Personagem</th>
      <th>Ações</th>
      
    </tr>
@@ -38,9 +38,9 @@
   <% @poderes.each do |poder| %>
    <tr>
       <td> <%= poder.id %></td>
-      <td> <%= poder.personagem.nome %></td>
       <td> <%= poder.nome %> </td>
       <td> <%= poder.tipo %> </td>  
+      <td> <%= poder.personagem.nome %></td>
       <td>
       
       <%= link_to 'Ver', poder.personagem, class: 'btn btn-success'%>
