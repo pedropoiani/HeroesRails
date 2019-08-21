@@ -29290,3 +29290,29 @@ Processing by PoderesController#index as HTML
 Completed 200 OK in 79ms (Views: 74.1ms | ActiveRecord: 2.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-08-21 19:53:46 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IntroController#index as HTML
+  Rendering intro/index.html.erb within layouts/application
+  Rendered intro/index.html.erb within layouts/application (1.7ms)
+  Rendered application/_footer.html.erb (0.4ms)
+Completed 200 OK in 218ms (Views: 209.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-08-21 19:53:50 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (21.5ms)
+  Rendered application/_footer.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 40.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-21 19:53:52 -0300
+Processing by IntroController#index as HTML
+  Rendering intro/index.html.erb within layouts/application
+  Rendered intro/index.html.erb within layouts/application (0.6ms)
+  Rendered application/_footer.html.erb (0.6ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
