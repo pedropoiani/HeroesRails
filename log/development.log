@@ -30102,3 +30102,262 @@ Processing by PoderesController#index as HTML
 Completed 200 OK in 111ms (Views: 106.4ms | ActiveRecord: 3.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-08-21 21:07:18 -0300
+Processing by IntroController#index as HTML
+  Rendering intro/index.html.erb within layouts/application
+  Rendered intro/index.html.erb within layouts/application (0.7ms)
+  Rendered application/_footer.html.erb (1.0ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-08-21 21:07:23 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (11.5ms)
+  Rendered application/_footer.html.erb (0.6ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-21 21:07:24 -0300
+Processing by IntroController#index as HTML
+  Rendering intro/index.html.erb within layouts/application
+  Rendered intro/index.html.erb within layouts/application (0.7ms)
+  Rendered application/_footer.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/poderes" for 127.0.0.1 at 2019-08-21 21:07:25 -0300
+Processing by PoderesController#index as HTML
+  Rendering poderes/index.html.erb within layouts/application
+  [1m[36mPoder Load (0.4ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes"[0m
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.5ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered poderes/index.html.erb within layouts/application (62.3ms)
+  Rendered application/_footer.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 76.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-08-21 21:07:26 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (18.4ms)
+  Rendered application/_footer.html.erb (0.4ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-21 21:07:26 -0300
+Processing by IntroController#index as HTML
+  Rendering intro/index.html.erb within layouts/application
+  Rendered intro/index.html.erb within layouts/application (1.4ms)
+  Rendered application/_footer.html.erb (0.4ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-08-21 21:07:28 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (17.6ms)
+  Rendered application/_footer.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-08-21 21:07:31 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  [1m[36mPoder Load (0.4ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 1]]
+  Rendered personagens/show.html.erb within layouts/application (16.4ms)
+  Rendered application/_footer.html.erb (0.7ms)
+Completed 200 OK in 39ms (Views: 35.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-21 21:07:38 -0300
+Processing by IntroController#index as HTML
+  Rendering intro/index.html.erb within layouts/application
+  Rendered intro/index.html.erb within layouts/application (0.8ms)
+  Rendered application/_footer.html.erb (0.4ms)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-08-21 21:07:39 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (17.3ms)
+  Rendered application/_footer.html.erb (0.4ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-21 21:07:39 -0300
+Processing by IntroController#index as HTML
+  Rendering intro/index.html.erb within layouts/application
+  Rendered intro/index.html.erb within layouts/application (0.7ms)
+  Rendered application/_footer.html.erb (0.6ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-08-21 21:08:42 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (12.1ms)
+  Rendered application/_footer.html.erb (0.5ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/poderes" for 127.0.0.1 at 2019-08-21 21:10:03 -0300
+Processing by PoderesController#index as HTML
+  Rendering poderes/index.html.erb within layouts/application
+  [1m[36mPoder Load (1.3ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes"[0m
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered poderes/index.html.erb within layouts/application (73.5ms)
+  Rendered application/_footer.html.erb (0.5ms)
+Completed 200 OK in 96ms (Views: 89.0ms | ActiveRecord: 4.1ms)
+
+
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" ORDER BY "personagens"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.7ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" ORDER BY "personagens"."agilidade" ASC LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mPersonagem Load (0.6ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" ORDER BY "personagens"."agilidade" ASC, ASC LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mPersonagem Load (0.5ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" ORDER BY agilidade ASC LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mPersonagem Load (0.5ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" ORDER BY agilidade DESC LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  "personagens"."agilidade" FROM "personagens" ORDER BY agilidade ASC LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT  "personagens"."agilidade" FROM "personagens" ORDER BY agilidade DES LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT  "personagens"."agilidade" FROM "personagens" ORDER BY agilidade DESC LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  "personagens"."nome", "personagens"."agilidade" FROM "personagens" ORDER BY agilidade DESC LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  "personagens"."nome", "personagens"."agilidade" FROM "personagens" ORDER BY forca DESC LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT  "personagens"."nome", "personagens"."forca" FROM "personagens" ORDER BY forca DESC LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? LIMIT ?[0m  [["nome", "Pedro"], ["LIMIT", 11]]
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 11]]
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 11]]
+  [1m[36mPersonagem Load (0.5ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? ORDER BY "personagens"."id" ASC LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 1]]
+  [1m[36mPoder Load (0.2ms)[0m  [1m[34mSELECT  "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ? LIMIT ?[0m  [["personagem_id", 7], ["LIMIT", 11]]
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "personagens" WHERE "personagens"."nome" = ?[0m  [["nome", "Arthur"]]
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? ORDER BY "personagens"."id" ASC LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? ORDER BY "personagens"."id" ASC LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 1]]
+  [1m[36mPoder Load (0.2ms)[0m  [1m[34mSELECT  "poderes".* FROM "poderes" WHERE "poderes"."personagem_id" = ? LIMIT ?[0m  [["personagem_id", 7], ["LIMIT", 11]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? ORDER BY "personagens"."id" ASC LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "poderes"."tipo" FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 7]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? ORDER BY "personagens"."id" ASC LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "poderes"."tipo", "poderes"."nome" FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 7]]
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? ORDER BY "personagens"."id" ASC LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "poderes"."tipo", "poderes"."nome" FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 7]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "personagens" ("nome", "forca", "resistencia", "agilidade", "destreza") VALUES (?, ?, ?, ?, ?)[0m  [["nome", "Arthur"], ["forca", 0], ["resistencia", 0], ["agilidade", 0], ["destreza", 0]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "personagens" WHERE "personagens"."nome" = ?[0m  [["nome", "Arthur"]]
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? ORDER BY "personagens"."id" ASC LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "poderes"."tipo", "poderes"."nome" FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 7]]
+  [1m[36mPersonagem Load (0.5ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? ORDER BY "personagens"."id" DESC LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "poderes"."tipo", "poderes"."nome" FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 17]]
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."nome" = ? ORDER BY "personagens"."id" DESC LIMIT ?[0m  [["nome", "Arthur"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "poderes"."tipo", "poderes"."nome" FROM "poderes" WHERE "poderes"."personagem_id" = ?[0m  [["personagem_id", 17]]
+Started GET "/poderes" for 127.0.0.1 at 2019-08-21 21:16:40 -0300
+Processing by PoderesController#index as HTML
+  Rendering poderes/index.html.erb within layouts/application
+  [1m[36mPoder Load (0.4ms)[0m  [1m[34mSELECT "poderes".* FROM "poderes"[0m
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered poderes/index.html.erb within layouts/application (80.9ms)
+  Rendered application/_footer.html.erb (0.5ms)
+Completed 200 OK in 102ms (Views: 98.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/personagens" for 127.0.0.1 at 2019-08-21 21:16:41 -0300
+Processing by PersonagensController#index as HTML
+  Rendering personagens/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.8ms)[0m  [1m[34mSELECT "personagens".* FROM "personagens"[0m
+  Rendered personagens/index.html.erb within layouts/application (14.3ms)
+  Rendered application/_footer.html.erb (0.8ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.8ms)
+
+
