@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190323182322) do
+ActiveRecord::Schema.define(version: 20190911235429) do
 
   create_table "personagens", force: :cascade do |t|
     t.string "nome"
@@ -18,6 +18,10 @@ ActiveRecord::Schema.define(version: 20190323182322) do
     t.integer "resistencia"
     t.integer "agilidade"
     t.integer "destreza"
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "poderes", force: :cascade do |t|

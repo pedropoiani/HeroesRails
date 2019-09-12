@@ -2,7 +2,7 @@
 
 <%= @personagem.errors.first %>
 
-<%= form_for @personagem do |f| %>
+<%= form_for @personagem, html: { multipart: true } do |f| %>
 <b> Nome:</b><br>
 <%= f.text_field :nome %>
 <p></p>
@@ -17,6 +17,10 @@
 <p></p>
 <b> Destreza:</b><br>
 <%= f.number_field :destreza %>
+<p></p>
+<p></p>
+<b> Imagem </b><br>
+<%= f.file_field :image %>
 <p></p>
 <%= f.submit("Salvar", :class => "btn btn-dark")  %>
 

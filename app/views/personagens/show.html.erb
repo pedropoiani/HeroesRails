@@ -1,11 +1,7 @@
 
 <!-- Image and text -->
 <p id="notice"><%= notice %> </p>
-
-
-
-
-
+    
 <div class="container">
     <div class="row">
         <div class="col-sm">
@@ -16,6 +12,9 @@
       <li class="list-group-item"><b>Resistencia:</b> <%= @personagem.resistencia %> </li>
       <li class="list-group-item"><b>Agilidade:</b> <%= @personagem.agilidade %> </li>
       <li class="list-group-item"><b>Destreza:</b> <%= @personagem.destreza %> </li>
+      <li class="list-group-item"><b>Situação:</b> <%= @personagem.situacao %> </li>
+      <%= image_tag @personagem.image.url(:medium) %>
+
    </ul>
         </div>
         <div class="col-sm">

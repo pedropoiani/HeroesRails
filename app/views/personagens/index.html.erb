@@ -38,7 +38,7 @@
    </tr>
 </thead>
    <% @personagens.each do |personagem|  %>
-   <tr>
+   <tr class= "<%= personagem.cor %>" >
       <td> <%= personagem.id %> </td>
       <td> <%= personagem.nome %> </td>
       <td> <%= personagem.forca %> </td>

@@ -43,7 +43,7 @@
 
   def create
 
-    @personagem = Personagem.new(params.require(:personagem).permit(:nome, :forca, :resistencia, :agilidade, :destreza))
+    @personagem = Personagem.new(params.require(:personagem).permit(:nome, :forca, :resistencia, :agilidade, :destreza, :image))
     if @personagem.save
       redirect_to @personagem, :notice => 'Cadastro criado com sucesso!'
       else
